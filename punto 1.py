@@ -1,21 +1,9 @@
-
-herencia_total = float(input("Ingrese el valor total de la herencia: "))
-
-
-esposa = herencia_total * 0.40
-
-
-restante = herencia_total * 0.60
-
-
-hijo1 = restante * 0.30
-hijo2 = restante * 0.20
-hijo3 = restante * 0.40
-hijo4 = restante * 0.10
-
-print("\nRepartición de la herencia:")
-print(f"Esposa recibe: ${esposa}")
-print(f"Hijo 1 recibe: ${hijo1}")
-print(f"Hijo 2 recibe: ${hijo2}")
-print(f"Hijo 3 recibe: ${hijo3}")
-print(f"Hijo 4 recibe: ${hijo4}")
+#se pone cualquier salario pues lo importante es hacer la retenciony bonificacion
+salario = 1500000
+#Ahora hacemos la retencion que es por el 18% sobre el salario
+retencion = float(salario * 0.18)
+# bonificacion del 1.3% sobre el salario 
+bonificacion = float(salario * 0.013)
+# El total seria el salario menos el valor acumulado en la retencion mas la bonificacion de la variable bonificacion y listo
+total = (salario - retencion + bonificacion)
+print(f"Su salario es de {salario:,}, se le aplicó la retencion del 18% y quedo: {retencion:,} ya con su bonificacion queda: {bonificacion} para un salario neto de: {total:,}")
